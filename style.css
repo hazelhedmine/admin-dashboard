@@ -1,10 +1,18 @@
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 280px 1fr;
   grid-template-rows: 120px 1fr;
   width: 100vw;
   height: 100vh;
@@ -13,13 +21,50 @@ body {
 .sidebar {
   grid-column: 1;
   grid-row: 1/3;
-  background-color: antiquewhite;
+  background-color: #1d3557;
+  color: #f1faee;
+  /* padding: 0 60px 0 20px; */
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 0 50px 0 10px;
+  gap: 5px;
+  font-size: 15px;
+  margin-bottom: -20px;
+}
+
+.logo-icon {
+  height: 50px;
+  align-self: center;
+}
+
+.sidebar-items-top,
+.sidebar-items-bottom {
+  display: grid;
+  grid-template-rows: 1em 1em 1em 1em 1em 1em;
+  row-gap: 30px;
+  margin-top: 60px;
+  padding: 0 60px 0 20px;
+}
+
+.navigation-items {
+  font-size: 20px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 15px;
+}
+
+li > .sidebar-icon {
+  height: 1em;
 }
 
 .header {
   grid-column: 2;
   grid-row: 1;
-  background-color: rgb(190, 135, 242);
+  background-color: #f1faee;
   display: grid;
   grid-template-rows: 40px 80px;
 }
@@ -35,5 +80,5 @@ body {
 .content {
   grid-column: 2;
   grid-row: 2;
-  background-color: brown;
+  background-color: #a8dadc;
 }
