@@ -13,7 +13,7 @@ ul {
 .container {
   display: grid;
   grid-template-columns: 280px 1fr;
-  grid-template-rows: 120px 1fr;
+  grid-template-rows: 180px 1fr;
   width: 100vw;
   height: 100vh;
 }
@@ -66,19 +66,73 @@ li > .sidebar-icon {
   grid-row: 1;
   background-color: #f1faee;
   display: grid;
-  grid-template-rows: 40px 80px;
+  grid-template-rows: 40px 120px;
+  gap: 20px;
 }
 
-.header .searchbar {
+.header .searchbar-header {
   grid-row: 1;
+  display: grid;
+  grid-template-columns: 40px 1fr 20px 40px 80px;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 40px;
+}
+
+.searchbar-profile {
+  height: 40px;
+}
+
+.searchbar-icons {
+  height: 20px;
+}
+
+.searchbar-header > input {
+  height: 20px;
+  border: 0;
+  border-radius: 25px;
+  /*add a bit of a gap before and after text*/
+  padding: 0 8px;
+  margin-right: 60px;
+  margin-left: -15px;
 }
 
 .header .profile-header {
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 280px 1fr 100px;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.profile-header-left {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  padding: 0;
+}
+
+.profile-handle {
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.profile-handle span {
+  font-size: 20px;
+}
+
+.profile-header-right {
+  grid-column: 3;
+}
+
+.profile-header-icon {
+  height: 60px;
 }
 
 .content {
   grid-column: 2;
   grid-row: 2;
   background-color: #a8dadc;
+  box-shadow: inset 0 4px 4px #9bb2b3;
 }
