@@ -187,7 +187,7 @@ li > .sidebar-icon {
 }
 
 .project-items .project-item:hover {
-  background-color: #f1faee;
+  background-color: white;
   border-radius: 12px;
   display: grid;
   grid-template-columns: 1rem 1fr;
