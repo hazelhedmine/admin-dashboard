@@ -87,7 +87,7 @@ li > .sidebar-icon {
   height: 20px;
 }
 
-.searchbar-header > input {
+.searchbar-header input {
   height: 20px;
   border: 0;
   border-radius: 25px;
@@ -97,10 +97,20 @@ li > .sidebar-icon {
   margin-left: -15px;
 }
 
+.searchbar-header input:hover {
+  background-color: whitesmoke;
+}
+
+.searchbar-header input:focus {
+  border: 1px solid #457b9d;
+  outline: none;
+  background-color: white;
+}
+
 .header .profile-header {
   grid-row: 2;
   display: grid;
-  grid-template-columns: 280px 1fr 100px;
+  grid-template-columns: 340px 1fr 300px;
   align-items: center;
   padding: 10px 40px;
 }
@@ -119,15 +129,32 @@ li > .sidebar-icon {
 }
 
 .profile-handle span {
-  font-size: 20px;
-}
-
-.profile-header-right {
-  grid-column: 3;
+  font-size: 26px;
 }
 
 .profile-header-icon {
   height: 60px;
+}
+
+.profile-header-right {
+  grid-column: 3;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.profile-header-right button {
+  border-radius: 25px;
+  border: 0;
+  padding: 10px 20px;
+  width: 82px;
+  background-color: #1d3557;
+  color: #f1faee;
+  font-weight: bold;
+}
+
+.profile-header-right button:hover {
+  background-color: #457b9d;
 }
 
 .content {
