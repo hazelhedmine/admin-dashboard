@@ -162,4 +162,116 @@ li > .sidebar-icon {
   grid-row: 2;
   background-color: #a8dadc;
   box-shadow: inset 0 4px 4px #9bb2b3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 16px 20px 10px 20px;
+  gap: 20px;
+}
+
+.content h2 {
+  font-size: 18px;
+}
+
+.project-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+}
+
+.project-items .project-item {
+  background-color: #f1faee;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+}
+
+.project-items .project-item .color-block {
+  grid-row: 1/3;
+  background-color: #e63946;
+  border-radius: 12px 0 0 12px;
+  width: 50%;
+}
+
+.project-items .project-item .text-block {
+  margin: 10px 16px;
+}
+
+.project-items .project-item .action-block {
+  display: flex;
+  gap: 30px;
+  margin: 0 40px 24px 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.project-items .project-item .action-block .action-icon {
+  height: 22px;
+}
+
+.content-left h3 {
+  font-size: 16px;
+}
+
+.content-left p {
+  font-size: 14px;
+}
+
+.content-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.content-right h3 {
+  font-size: 14px;
+}
+
+.content-right .content-right-top .announcement-items {
+  background-color: #f1faee;
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-right .content-right-top .announcement-items hr {
+  border-top: 1px solid #a8dadc;
+  /* to fix flexbox behaviour*/
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-right .content-right-top .announcement-items p {
+  font-size: 12px;
+}
+
+.content-right .content-right-bottom .trending-items {
+  background-color: #f1faee;
+  border-radius: 12px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-right .content-right-bottom .trending-items .trending-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.content-right .content-right-bottom .trending-items .trending-item img {
+  height: 40px;
+}
+
+.content-right .content-right-bottom .trending-items .trending-item p {
+  font-size: 14px;
+}
+
+.content-right .content-right-bottom .trending-items .trending-item p span,
+.content-right .content-right-top .announcement-items .text-block p,
+.content-left .project-items .project-item .text-block p {
+  color: rgb(87, 85, 85);
 }
